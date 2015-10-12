@@ -10,7 +10,7 @@ test("empty type returns empty url", function(assert) {
 
 test("set type returns a url for an icon asset", function(assert) {
   let component = this.subject();
-  let type = "someType"
+  let type = "someType";
   component.set("type", type);
   assert.equal(component.get("iconUrl"), component.get("assetsPrefix")+type+".png");
 });

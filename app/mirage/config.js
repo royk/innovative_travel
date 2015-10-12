@@ -31,6 +31,6 @@ export default function() {
           "subtype": "airport"
         }
       ]
-    }
+    };
   });
 }
