@@ -1,0 +1,17 @@
+{{input value=selectedValue placeholder=placeholderText autocomplete="off" spellcheck="false"}}
+<span class="tt-dropdown-menu" {{bind-attr style=visibility}}>
+  <div class="tt-dataset-states">
+    <span class="tt-suggestions">
+      {{#each suggestions as |result|}}
+          <div {{bind-attr class=":tt-suggestion result.highlight:tt-cursor"}} {{action "selectItem" result }}>
+            {{yield result}}
+          </div>
+      {{else}}
+          <div class="message">
+              <p>{{noMesssagePlaceHolderText}}</p>
+          </div>
+      {{/each}}
+    </span>
+  </div>
+</span>
+{{yield}}

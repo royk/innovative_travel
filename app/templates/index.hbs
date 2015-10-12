@@ -1,0 +1,7 @@
+{{#hotel-auto-complete options=hotels selectedValue=model.name placeHolderText="Find a hotel!" noMesssagePlaceHolderText="No hotels found" as |result|}}
+  {{entry-icon type=result.subtype}}
+  <div>
+    {{result.name}}
+  </div>
+{{/hotel-auto-complete}}
+{{outlet}}
